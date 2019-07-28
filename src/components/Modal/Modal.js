@@ -37,7 +37,7 @@ class Modal extends Component {
 
                                     <td width="98%">
                                         <div className="img-popup">
-                                            {props.selectedImage !== '' && <img src={`assets/full-image/${imglist[props.selectedImage].fullimage}`} alt={imglist[props.selectedImage].fullimage} />}
+                                            {props.selectedImage !== '' && <img src={imglist[props.selectedImage].download_url} alt={imglist[props.selectedImage].author} />}
                                         </div>
                                     </td>
                                     <td width="1%"><button className="button-css" disabled={(props.selectedImage !== imglist.length - 1) ? false : true} onClick={this.props.nextImage}>›</button></td>

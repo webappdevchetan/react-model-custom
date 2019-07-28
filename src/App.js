@@ -46,7 +46,7 @@ class App extends Component {
 
         <div className="img-full-div ">
           {Object.keys(imglist).map((v, i) => <div onClick={() => this.openModalHandler(v)} className="img-item" key={v}>
-            <img src={`assets/thumbnail/${imglist[v].thumbnail}`} alt={imglist[v].fullimage} />
+            <img src={imglist[v].thumbnail} alt={imglist[v].author} />
           </div>
           )}
         </div>
